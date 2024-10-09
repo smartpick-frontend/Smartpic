@@ -1,79 +1,79 @@
 /* src/App.css */
 .app-container {
   display: flex;
-  justify-content: flex-start; /* Align items to the start */
-  align-items: stretch; /* Stretch items to fill the container vertically */
-  height: 100vh; /* Full height of viewport */
-  background-color: #f7f9fc; /* Light background color for the whole app */
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  background-color: #f7f9fc;
 }
 
 .login-container {
-  max-width: 400px; /* Maximum width of the login form */
-  width: 100%; /* Full width of the container */
-  padding: 30px; /* Padding around the form */
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
   margin-top: 90px;
-  margin-left: 20px; /* Adjust this value to move it left or right */
-  background-color: transparent; /* White background for the login form */
-  border-radius: 15px; /* More rounded corners */
-  text-align: center; /* Center-align text */
+  margin-left: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .login-container h2 {
-  margin-bottom: 20px; /* Space below heading */
-  color: #333; /* Darker color for heading */
-  font-size: 24px; /* Font size for heading */
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
 }
 
 .form-group {
-  margin-bottom: 15px; /* Space between form groups */
+  margin-bottom: 15px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px; /* Space below label */
-  color: #555; /* Darker label color */
+  margin-bottom: 5px;
+  color: #555;
 }
 
 input {
-  width: 100%; /* Full width of the container */
-  padding: 10px; /* More padding for inputs */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 5px; /* Slightly rounded corners */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 button {
-  width: 100%; /* Full width for button */
-  padding: 10px; /* Button padding */
-  background-color: #0E46A3; /* Button color */
-  color: white; /* Button text color */
-  border: none; /* No border */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 5px; /* Rounded button corners */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  width: 100%;
+  padding: 10px;
+  background-color: #0E46A3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0C3D8A; /* Darker shade for hover */
+  background-color: #0C3D8A;
 }
 
 .error-message {
-  color: #f44336; /* Red color for error message */
-  margin-bottom: 10px; /* Space below error message */
-  text-align: center; /* Center error message */
+  color: #f44336;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .image-container {
-  flex: 0 0 50%; /* Fixed width of 50% for the image container */
-  height: 100%; /* Full height of the viewport */
+  flex: 0 0 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image-container img {
-  width: 100%; /* Image takes full width of the container */
-  height: 100%; /* Image takes full height of the container */
-  object-fit: cover; /* Ensures the image covers the container */
-  border-radius: 15px; /* Rounded corners for image */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }

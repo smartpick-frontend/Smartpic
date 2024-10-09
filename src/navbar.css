@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #0E46A3; /* Background color for the navbar */
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw; /* Ensures full viewport width */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  position: relative; /* Ensure it stays on top */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 17px;
+  color: white;
+}
+
+.navItem > * {
+  margin-right: 8px;
+}
+
+.phone-icon {
+  transform: rotate(90deg);
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-item, .parents-item, .teacher-item, .permission-item {
+  font-size: 20px;
+}
+
+/* Ensure the navbar stays on top of all other elements */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navItem {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
