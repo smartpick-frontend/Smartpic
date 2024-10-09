@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #0E46A3; /* Background color for the navbar */
+  background-color: #0E46A3; 
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  width: 100vw; /* Ensures full viewport width */
-  box-sizing: border-box; /* Ensures padding is included in width calculation */
-  position: relative; /* Ensure it stays on top */
+  width: 100vw; 
+  box-sizing: border-box; 
+  position: relative; 
 }
 
 .logo {
@@ -56,13 +56,12 @@
   font-size: 20px;
 }
 
-/* Ensure the navbar stays on top of all other elements */
 body, html {
   margin: 0;
   padding: 0;
 }
 
-/* Add responsiveness for smaller screens */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

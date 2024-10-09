@@ -1,0 +1,169 @@
+.parent-container {
+    display: flex;                /* Use Flexbox to align items side by side */
+    justify-content: space-between; /* Optional: Add space between the two containers */
+    margin-left: 30px;
+    margin-top: 30px;
+    gap: 30px;                    /* Space between container1 and container3 */
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    margin-top: 90px;
+    margin-left: 20px;
+    width: 45vw;
+    height: 78vh;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #9AC8CD;
+}
+
+.class  {
+    margin-left: 70px;
+   
+    padding-left: 15px;
+    width: 180px; /* This width can be adjusted or removed */
+    border-radius: 20px;
+    margin-top: 28px
+}
+.class select,
+.stud select {
+    width: 250px; 
+    height: 40px; 
+    font-size: 16px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 1px solid #ccc; 
+    transition: all 0.3s ease; /* Animation for all properties */
+}
+
+/* Style for focused select element */
+.class select:focus,
+.stud select:focus {
+    outline: none; 
+    border: 2px solid #007BFF; 
+    background-color: #f0f8ff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+/* Optional: Add a hover effect */
+.class select:hover,
+.stud select:hover {
+    background-color: #e0f7fa; /* Change background color on hover */
+    border-color: #00acc1; /* Change border color on hover */
+}
+.stud {
+    padding: 10px;
+    width: 180px; /* This width can be adjusted or removed */
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.photo {
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 60vh;
+    margin-bottom: 0;
+    margin-left: 35px;
+    width: 90%; /* Adjusted to fill available space */
+    background-color: white;
+    overflow: hidden;
+    grid-column: span 2; /* Make photo span across both columns */
+}
+
+.photo img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.container2 {
+    margin-top: 90px;
+    border: 2px solid black;
+    width: 45vw;
+    height: 82vh;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.d {
+    display: flex;              
+    flex-direction: column;     
+    gap: 10px;                  
+}
+
+.form-group {
+    margin-top: 20px;
+    display: flex;               
+    flex-direction: column;      
+}
+
+.label {
+    margin-bottom: 5px;         
+    font-weight: bold;           
+}
+
+.readonly-input {
+    width: 93%; 
+    padding: 10px; 
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    background-color: #f9f9f9; 
+    cursor: not-allowed; 
+    color: #000;
+}
+
+.label {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.heading {
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .parent-container {
+        flex-direction: column;  /* Stack the containers vertically on smaller screens */
+        margin-left: 0;
+        margin-right: 0;
+        gap: 15px;  /* Reduced gap for smaller screens */
+    }
+
+    .container1, .container2 {
+        width: 90vw;  /* Make the containers wider on smaller screens */
+    }
+
+    .class, .stud {
+        margin-left: 0; /* Reset margin for class and stud on smaller screens */
+        width: 100%;    /* Make inputs full width */
+    }
+
+    .photo {
+        margin-left: 0; /* Reset margin for photo on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 28px; /* Smaller font size for smaller screens */
+    }
+
+    .readonly-input {
+        font-size: 16px; /* Smaller font size for inputs */
+    }
+
+    .label {
+        font-size: 18px; /* Smaller font size for labels */
+    }
+}
