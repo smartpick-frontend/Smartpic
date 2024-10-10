@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaHome, FaUser, FaBook, FaCheckCircle, FaPhone } from 'react-icons/fa';
 import './navbar.css';   
+import logo from './assets/logo.svg';
 
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="logo.png" alt="Logo" className="logoImage" />
+      <img src={logo} alt="Logo" className="logoImage" />
         <span className="logoText">Smart Pick</span>
       </div>
       <ul className="navList">

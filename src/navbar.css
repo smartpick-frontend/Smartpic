@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #0E46A3; 
+  background-color: var(---fr);
   color: #fff;
   font-family: 'Roboto', sans-serif;
   width: 100vw; 
@@ -42,6 +42,12 @@
   color: white;
 }
 
+.navItem:hover {
+  background-color: #fff; 
+  color: #1E0342; 
+  border-radius: 15px;
+}
+
 .navItem > * {
   margin-right: 8px;
 }
@@ -52,15 +58,33 @@
   transition: transform 0.3s ease;
 }
 
-.dashboard-item, .parents-item, .teacher-item, .permission-item {
+.dashboard-item, 
+.parents-item, 
+.teacher-item, 
+.permission-item {
   font-size: 20px;
+}
+
+.navItem .dashboard-item,
+.navItem .parents-item,
+.navItem .teacher-item,
+.navItem .permission-item,
+.navItem .phone-icon {
+  margin-right: 8px; 
+}
+
+.navItem:hover .dashboard-item,
+.navItem:hover .parents-item,
+.navItem:hover .teacher-item,
+.navItem:hover .permission-item,
+.navItem:hover .phone-icon {
+  color: #1E0342; /* Fixed color code spacing */
 }
 
 body, html {
   margin: 0;
   padding: 0;
 }
-
 
 @media (max-width: 768px) {
   .navbar {
