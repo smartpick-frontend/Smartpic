@@ -7,7 +7,7 @@ import styles from './Login.module.css';
 const App: React.FC = () => {
   const handleLogin = (email: string, password: string) => {
     console.log('Logging in with:', { email, password });
-    // Handle login logic here, e.g., API calls.
+    
   };
 
   return (

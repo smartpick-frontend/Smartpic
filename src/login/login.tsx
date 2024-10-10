@@ -19,7 +19,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       return;
     }
 
-    // Pass credentials up to parent component for authentication
+    
     onLogin(email, password);
   };
 
